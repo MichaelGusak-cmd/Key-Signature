@@ -7,17 +7,17 @@ namespace Characters.Movement
 {
     public enum GroundState
     {
-        Floor, 
+        Floor,
         Wall,
         Air
     }
 
     public enum SideState
     {
-        Left,
-        Right,
-        Both,
-        None
+        Left = -1,
+        Right = 1,
+        Both = 2,
+        None = 0
     }
 
 
@@ -47,7 +47,7 @@ namespace Characters.Movement
         [SerializeField] private LayerMask _stairMask;
 
 
-        public LayerMask Mask => _mask;
+        public LayerMask Mask; // => _mask;
         public LayerMask ClimbMask => _climbMask;
 
         public LayerMask StairMask => _stairMask;
