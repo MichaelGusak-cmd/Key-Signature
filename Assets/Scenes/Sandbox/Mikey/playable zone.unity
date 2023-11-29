@@ -284,6 +284,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   JumpForce: 10
   TerminalVelocity: 10
+  WalkSpeed: 5
   GroundMask:
     serializedVersion: 2
     m_Bits: 1024
